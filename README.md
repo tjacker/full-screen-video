@@ -28,3 +28,5 @@ No installation necessary. Download or clone and open in you favorite editor and
 ## Re-creator
 
 - Tim Acker - [tjacker](https://github.com/tjacker)
+
+<sup>Favicon by Freepik</sup>
