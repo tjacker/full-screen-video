@@ -5,11 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <title>Full Screen Video Background</title>
 </head>
 
 <body>
-  <h1>Video Background</h1>
+  <header>
+    <section class="landing-section">
+      <div>
+        <h1>Shoot for The Stars</h1>
+        <p>Full screen video landing page</p>
+        <a href="#about" class="btn">Learn more</a>
+      </div>
+      <div class="video-container">
+        <video src="./assets/media/video.mp4" autoplay loop></video>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about" class="about-section">
+      <h2>About this page</h2>
+      <p>This is a landing page with full screen video background that includes inputs to customize the overlay color
+        and opacity. Original site idea courtesy of <a href="https://www.youtube.com/watch?v=Gx_7GQtSdpc">Traversy
+          Media</a>
+      </p>
+    </section>
+    <section class="social-section">
+      <h3>Follow them on social media</h3>
+      <div class="social-section-links">
+        <a href="https://twitter.com/traversymedia" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://facebook.com/traversymedia" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://github.com/bradtraversy" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/bradtraversy" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
