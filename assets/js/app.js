@@ -1,24 +1,15 @@
 (function () {
-  const initOpacityInput = function () {
-    const opacityInput = document.getElementById("opacity");
+  const handleInputEvent = function (input, cssVariable) {
+    const inputElement = document.getElementById(input);
     const root = document.documentElement;
 
-    opacityInput.addEventListener("input", function () {
-      root.style.setProperty("--overlay-opacity", this.value);
+    inputElement.addEventListener("input", function () {
+      root.style.setProperty(cssVariable, this.value);
     });
   };
 
-  const initColorInput = function () {
-    const colorInput = document.getElementById("color");
-    const root = document.documentElement;
-
-    colorInput.addEventListener("input", function () {
-      root.style.setProperty("--overlay-color", this.value);
-    });
-  };
-
-  initOpacityInput();
-  initColorInput();
+  handleInputEvent("opacity", "--overlay-opacity");
+  handleInputEvent("color", "--overlay-color");
 })();
 
 // TODO: Save input preferences to local storage
