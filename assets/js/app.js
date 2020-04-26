@@ -1,5 +1,5 @@
 (function () {
-  const init = function () {
+  const initOpacityInput = function () {
     const opacityInput = document.getElementById("opacity");
     const root = document.documentElement;
 
@@ -8,7 +8,17 @@
     });
   };
 
-  init();
+  const initColorInput = function () {
+    const colorInput = document.getElementById("color");
+    const root = document.documentElement;
+
+    colorInput.addEventListener("input", function () {
+      root.style.setProperty("--overlay-color", this.value);
+    });
+  };
+
+  initOpacityInput();
+  initColorInput();
 })();
 
-// TODO: Add color input and save input preferences to local storage
+// TODO: Save input preferences to local storage
