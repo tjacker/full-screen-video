@@ -19,9 +19,12 @@ h1 {
   margin-bottom: 1rem;
 }
 
-h2,
-h3 {
+h2 {
   font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
 }
 
 body {
@@ -97,4 +100,45 @@ body {
 
 .landing-section-content .btn:active {
   transform: scale(0.96);
+}
+
+.about-section,
+.social-section {
+  text-align: center;
+}
+
+.about-section {
+  max-width: 720px;
+  margin: auto;
+  padding: 8rem 2rem;
+}
+
+.social-section {
+  background-color: var(--primary-color);
+  color: var(--light-font);
+  padding: 3rem 2rem;
+}
+
+.about-section-title,
+.social-section-title {
+  margin-bottom: 2rem;
+}
+
+.about-section-title {
+  font-size: 3rem;
+}
+
+.social-section-title {
+  font-size: 1.5rem;
+}
+
+.about-section-description {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.social-section-links .fab {
+  display: inline-block;
+  color: var(--light-font);
+  padding: 0.5rem;
 }
