@@ -165,6 +165,7 @@ body {
   display: block;
   color: var(--light-font);
   font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 0.5rem;
   opacity: 0.6;
 }
